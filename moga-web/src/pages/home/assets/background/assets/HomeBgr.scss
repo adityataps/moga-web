@@ -1,7 +1,44 @@
-$bgr0 = url(bgr0.png);
-
+$bgr0: url(bgr0.png);
+$bgr1: url(bgr1.png);
+$bgr2: url(bgr2.png);
 
 
 #home-bgr-wrapper {
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+  z-index: -5;
+  background-color: black;
+  background-image: $bgr0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: repeat;
+}
 
+@mixin img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#bgr1 {
+  @include img;
+  background-image: $bgr1;
+  background-size: 101%;
+  background-repeat: repeat;
+  z-index: 0;
+}
+
+#bgr2 {
+  @include img;
+  background-image: $bgr2;
+  background-size: 102%;
+  background-repeat: repeat;
+  z-index: 1;
 }
