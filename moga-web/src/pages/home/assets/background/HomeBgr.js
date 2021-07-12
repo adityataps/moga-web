@@ -20,12 +20,10 @@ export default function HomeBgr() {
         ) {
             const mouseListener = (e) => {
 
-                bgr1Ref.current.style.backgroundPositionX = (50 + ((e.offsetX - winWid) * 0.003)) + "%";
-                bgr1Ref.current.style.backgroundPositionY = (50 + ((e.offsetY - winHei) * 0.003)) + "%";
-                bgr2Ref.current.style.backgroundPositionX = (50 + ((-e.offsetX - winWid) * 0.006)) + "%";
-                bgr2Ref.current.style.backgroundPositionY = (50 + ((-e.offsetY - winHei) * 0.006)) + "%";
-
-
+                bgr1Ref.current.style.backgroundPositionX = (50 + ((e.offsetX - winWid) * 0.005)) + "%";
+                bgr1Ref.current.style.backgroundPositionY = (50 + ((e.offsetY - winHei) * 0.005)) + "%";
+                bgr2Ref.current.style.backgroundPositionX = (50 + ((-e.offsetX - winWid) * 0.007)) + "%";
+                bgr2Ref.current.style.backgroundPositionY = (50 + ((-e.offsetY - winHei) * 0.007)) + "%";
 
             }
 
